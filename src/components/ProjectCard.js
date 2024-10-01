@@ -8,7 +8,7 @@ const PrjoectCard = (props) => {
 
   return (
     <div className={(imageFirst ? "flex-row text-left" : "flex-row-reverse text-right") + " flex mb-20 "}>
-      <img alt="" className={'w-1/2 rounded-lg' + (imageFirst ? ' mr-4' : ' ml-4')} />
+      <img src={projImg} alt="proj-image" className={'w-1/2 rounded-lg ' + (imageFirst ? ' mr-8' : ' ml-8')} />
 
       <div className='w-1/2 p-4 text-purple-50'>
         <div className='text-7xl font-bold text-purple-600 my-4' > {projNum}</div>
@@ -17,8 +17,8 @@ const PrjoectCard = (props) => {
         <div className='text-2xl  font-bold text-purple-600 my-8' > {projTechStack.join(', ')}</div>
         <hr ></hr>
         <div className='flex my-4'>
-          <div className='p-3 m-2 rounded-full  bg-purple-600/30  '><ArrowUpRightIcon className='w-8 text-purple-50' /></div>
-          <div className='p-3 m-2 rounded-full bg-purple-600/30 '><img src={GithubIcon} className='w-8 ' /></div>
+          <a href={projWebLink} target='_blank' className='p-3 m-2 rounded-full  bg-purple-600/30  '><ArrowUpRightIcon className='w-8 text-purple-50' /></a>
+          <a href={projGithubLink} target='_blank' className='p-3 m-2 rounded-full bg-purple-600/30 '><img src={GithubIcon} className='w-8 ' /></a>
         </div>
       </div>
     </div>
