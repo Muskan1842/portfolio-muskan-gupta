@@ -17,8 +17,8 @@ const PrjoectCard = (props) => {
         <div className='text-2xl  font-bold text-purple-600 my-8' > {projTechStack.join(', ')}</div>
         <hr ></hr>
         <div className='flex my-4'>
-          <a href={projWebLink} target='_blank' className='p-3 m-2 rounded-full  bg-purple-600/30  '><ArrowUpRightIcon className='w-8 text-purple-50' /></a>
-          <a href={projGithubLink} target='_blank' className='p-3 m-2 rounded-full bg-purple-600/30 '><img src={GithubIcon} className='w-8 ' /></a>
+          <a href={projWebLink} target='_blank' rel="noreferrer" className='p-3 m-2 rounded-full  bg-purple-600/30  '><ArrowUpRightIcon className='w-8 text-purple-50' /></a>
+          <a href={projGithubLink} target='_blank' rel="noreferrer" className='p-3 m-2 rounded-full bg-purple-600/30 '><img alt="github-icon" src={GithubIcon} className='w-8 ' /></a>
         </div>
       </div>
     </div>
