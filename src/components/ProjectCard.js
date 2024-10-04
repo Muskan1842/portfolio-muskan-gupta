@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArrowUpRightIcon } from '@heroicons/react/24/outline'
-import GithubIcon from './../assets/github-icon-light.svg'
+// import GithubIcon from './../assets/github-icon-light.svg'
 
 const PrjoectCard = (props) => {
 
@@ -8,7 +8,7 @@ const PrjoectCard = (props) => {
 
   return (
     <div className={(imageFirst ? "flex-row text-left" : "flex-row-reverse text-right") + " flex mb-20 "}>
-      <img src={projImg} alt="proj-image" className={'w-1/2 rounded-lg ' + (imageFirst ? ' mr-8' : ' ml-8')} />
+      <img src={`${projImg}`} alt="proj-image" className={'w-1/2 rounded-lg ' + (imageFirst ? ' mr-8' : ' ml-8')} />
 
       <div className='w-1/2 p-4 text-purple-50'>
         <div className='text-7xl font-bold text-purple-600 my-4' > {projNum}</div>
@@ -18,7 +18,7 @@ const PrjoectCard = (props) => {
         <hr ></hr>
         <div className='flex my-4'>
           <a href={projWebLink} target='_blank' rel="noreferrer" className='p-3 m-2 rounded-full  bg-purple-600/30  '><ArrowUpRightIcon className='w-8 text-purple-50' /></a>
-          <a href={projGithubLink} target='_blank' rel="noreferrer" className='p-3 m-2 rounded-full bg-purple-600/30 '><img alt="github-icon" src={GithubIcon} className='w-8 ' /></a>
+          <a href={projGithubLink} target='_blank' rel="noreferrer" className='p-3 m-2 rounded-full bg-purple-600/30 '><img alt="github-icon" src='https://portfolio-muskan-gupta.netlify.app/assets/github-icon-light.svg' className='w-8 ' /></a>
         </div>
       </div>
     </div>

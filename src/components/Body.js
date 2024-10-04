@@ -4,14 +4,14 @@ import ProfileImage from './ProfileImage'
 import MyInfo from './MyInfo'
 import PrjoectCard from './ProjectCard'
 import SkillsContainer from './SkillsContainer'
-import ForkifyImg from './../assets/forkify-img.png';
-import NetflixGptImg from './../assets/netflix-gpt-img.png';
+// import ForkifyImg from './../assets/forkify-img.png';
+// import NetflixGptImg from './../assets/netflix-gpt-img.png';
 
 const Body = () => {
 
     const projData1 = {
         projNum: '01',
-        projImg: NetflixGptImg,
+        projImg: 'https://portfolio-muskan-gupta.netlify.app/assets/netflix-gpt-img.png',
         projTitle: 'Super Netflix Gpt',
         projDesc: ['Netflix with SUPER POWERS of ChatGPT!', 'A video streaming User Experience using OpenAI APIs.'],
         projWebLink: 'https://super-netflix-gpt.web.app/',
@@ -20,7 +20,7 @@ const Body = () => {
     }
     const projData2 = {
         projNum: '02',
-        projImg: ForkifyImg,
+        projImg: 'https://portfolio-muskan-gupta.netlify.app/assets/forkify-img.png',
         projTitle: 'Forkify Recipe App',
         projDesc: ['Try or Upload a new Recipe!', 'An app built with pure Vanilla Javascript, HTML and CSS.'],
         projWebLink: 'https://forkify-recipie-app.netlify.app/',

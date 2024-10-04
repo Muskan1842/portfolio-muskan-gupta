@@ -1,9 +1,9 @@
 import React from 'react'
 import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
-import LinkedInIcon from './../assets/linkedin-icon.svg'
-import GithubIcon from './../assets/github-icon.svg'
+// import LinkedInIcon from './../assets/linkedin-icon.svg'
+// import GithubIcon from './../assets/github-icon.svg'
 import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
-import ResumePdf from './../assets/Resume.pdf'
+import ResumePdf from './../Resume.pdf'
 
 const MyInfo = () => {
     const handleDownloadClick = () => {
@@ -25,8 +25,8 @@ const MyInfo = () => {
 
                 <button download='mycv' onClick={handleDownloadClick} className=' bg-purple-600 text-purple-50 rounded-full px-6  mr-4 text-xl flex w-64 justify-center items-center cursor-pointer'>DOWNLOAD RESUME <span><ArrowDownTrayIcon className='ml-2 w-6 ' /></span></button>
                 <div className='py-1 flex items-center'>
-                    <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/muskan-arpit-gupta/' className='flex items-center justify-center w-10 h-10 border-[1px] border-purple-600 mx-2 rounded-full cursor-pointer'><img alt='linked-in-icon' src={LinkedInIcon} className='w-4'></img></a>
-                    <a target='_blank' rel="noreferrer" href='https://github.com/Muskan1842' className='flex items-center justify-center w-10 h-10 border-[1px] border-purple-600 mx-2 rounded-full cursor-pointer'><img alt='github-icon' src={GithubIcon} className='w-4'></img></a>
+                    <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/muskan-arpit-gupta/' className='flex items-center justify-center w-10 h-10 border-[1px] border-purple-600 mx-2 rounded-full cursor-pointer'><img alt='linked-in-icon' src='https://portfolio-muskan-gupta.netlify.app/assets/linkedin-icon.svg' className='w-4'></img></a>
+                    <a target='_blank' rel="noreferrer" href='https://github.com/Muskan1842' className='flex items-center justify-center w-10 h-10 border-[1px] border-purple-600 mx-2 rounded-full cursor-pointer'><img alt='github-icon' src='https://portfolio-muskan-gupta.netlify.app/assets/github-icon.svg' className='w-4'></img></a>
                 </div>
 
             </div>
